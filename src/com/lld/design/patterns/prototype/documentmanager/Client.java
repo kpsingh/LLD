@@ -4,7 +4,7 @@ public class Client {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         DocumentManager documentManager = new DocumentManager();
-
+        
         Letter letter = (Letter) documentManager.clone("letter");
         letter.setRecipient("Prasoon");
 
