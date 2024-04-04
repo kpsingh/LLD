@@ -1,6 +1,5 @@
 package com.lld.design.patterns.prototype.documentmanager;
 
-import javax.print.Doc;
 import java.util.HashMap;
 import java.util.Map;
 
