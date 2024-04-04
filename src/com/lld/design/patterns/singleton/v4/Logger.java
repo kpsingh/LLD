@@ -1,7 +1,5 @@
 package com.lld.design.patterns.singleton.v4;
 
-import org.apache.commons.logging.Log;
-
 import java.util.concurrent.Callable;
 
 public class Logger implements Callable<Logger> {
