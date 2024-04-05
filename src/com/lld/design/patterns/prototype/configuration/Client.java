@@ -7,6 +7,9 @@ public class Client {
         registry.addPrototype(c1);
         System.out.println(c1);
 
+        Configuration c2 = registry.getPrototype(ConfigurationType.ADVANCED).cloneObject();
+        System.out.println(c2);
+
 
     }
 }
