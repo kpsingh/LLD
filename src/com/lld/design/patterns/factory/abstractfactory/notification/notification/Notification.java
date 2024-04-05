@@ -1,7 +1,7 @@
 package com.lld.design.patterns.factory.abstractfactory.notification.notification;
 
-import com.design.patterns.factory.abstractfactory.notification.NotificationType;
-import com.design.patterns.factory.abstractfactory.notification.template.NotificationTemplate;
+import com.lld.design.patterns.factory.abstractfactory.notification.NotificationType;
+import com.lld.design.patterns.factory.abstractfactory.notification.template.NotificationTemplate;
 
 public abstract class Notification {
 

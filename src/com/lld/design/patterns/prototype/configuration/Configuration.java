@@ -49,6 +49,19 @@ public class Configuration implements ClonableObject<Configuration> {
 
     @Override
     public Configuration cloneObject() {
-        return new Configuration(themeColor, autoSave, language, darkMode, fontSize, fontFamily, type);
+        return new Configuration(this.themeColor, this.autoSave, this.language, this.darkMode, this.fontSize, this.fontFamily, this.type);
+    }
+
+    @Override
+    public String toString() {
+        return "Configuration{" +
+                "themeColor='" + themeColor + '\'' +
+                ", autoSave=" + autoSave +
+                ", language='" + language + '\'' +
+                ", darkMode=" + darkMode +
+                ", fontSize=" + fontSize +
+                ", fontFamily='" + fontFamily + '\'' +
+                ", type=" + type +
+                '}';
     }
 }

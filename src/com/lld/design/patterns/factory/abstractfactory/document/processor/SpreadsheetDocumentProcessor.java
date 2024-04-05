@@ -1,6 +1,6 @@
 package com.lld.design.patterns.factory.abstractfactory.document.processor;
 
-import com.design.patterns.factory.abstractfactory.document.DocumentType;
+import com.lld.design.patterns.factory.abstractfactory.document.DocumentType;
 
 public class SpreadsheetDocumentProcessor extends DocumentProcessor {
 

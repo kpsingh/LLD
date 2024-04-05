@@ -1,6 +1,6 @@
-package com.design.patterns.factory.abstractfactory.notification.template;
+package com.lld.design.patterns.factory.abstractfactory.notification.template;
 
-import com.design.patterns.factory.abstractfactory.notification.NotificationType;
+import com.lld.design.patterns.factory.abstractfactory.notification.NotificationType;
 
 public class PushNotificationTemplate extends NotificationTemplate{
     public PushNotificationTemplate(String message) {

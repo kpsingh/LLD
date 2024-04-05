@@ -1,11 +1,11 @@
-package com.design.patterns.factory.abstractfactory.notification;
+package com.lld.design.patterns.factory.abstractfactory.notification;
 
-import com.design.patterns.factory.abstractfactory.notification.notification.Notification;
-import com.design.patterns.factory.abstractfactory.notification.notification.PushNotification;
-import com.design.patterns.factory.abstractfactory.notification.sender.NotificationSender;
-import com.design.patterns.factory.abstractfactory.notification.sender.PushNotificationSender;
-import com.design.patterns.factory.abstractfactory.notification.template.NotificationTemplate;
-import com.design.patterns.factory.abstractfactory.notification.template.PushNotificationTemplate;
+import com.lld.design.patterns.factory.abstractfactory.notification.notification.Notification;
+import com.lld.design.patterns.factory.abstractfactory.notification.notification.PushNotification;
+import com.lld.design.patterns.factory.abstractfactory.notification.sender.NotificationSender;
+import com.lld.design.patterns.factory.abstractfactory.notification.sender.PushNotificationSender;
+import com.lld.design.patterns.factory.abstractfactory.notification.template.NotificationTemplate;
+import com.lld.design.patterns.factory.abstractfactory.notification.template.PushNotificationTemplate;
 
 public class PushNotificationFactory extends NotificationFactory {
     @Override
@@ -19,7 +19,7 @@ public class PushNotificationFactory extends NotificationFactory {
     }
 
     @Override
-    public NotificationTemplate createNotificationTemplate(String message) {
+    public PushNotificationTemplate createNotificationTemplate(String message) {
         return new PushNotificationTemplate(message);
     }
 
