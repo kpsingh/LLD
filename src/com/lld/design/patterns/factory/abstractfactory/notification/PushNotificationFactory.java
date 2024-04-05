@@ -4,6 +4,7 @@ import com.lld.design.patterns.factory.abstractfactory.notification.notification
 import com.lld.design.patterns.factory.abstractfactory.notification.notification.PushNotification;
 import com.lld.design.patterns.factory.abstractfactory.notification.sender.NotificationSender;
 import com.lld.design.patterns.factory.abstractfactory.notification.sender.PushNotificationSender;
+import com.lld.design.patterns.factory.abstractfactory.notification.template.EmailNotificationTemplate;
 import com.lld.design.patterns.factory.abstractfactory.notification.template.NotificationTemplate;
 import com.lld.design.patterns.factory.abstractfactory.notification.template.PushNotificationTemplate;
 
@@ -19,7 +20,7 @@ public class PushNotificationFactory extends NotificationFactory {
     }
 
     @Override
-    public PushNotificationTemplate createNotificationTemplate(String message) {
+    public EmailNotificationTemplate createNotificationTemplate(String message) {
         return new PushNotificationTemplate(message);
     }
 

@@ -2,7 +2,7 @@ package com.lld.design.patterns.factory.abstractfactory.notification.template;
 
 import com.lld.design.patterns.factory.abstractfactory.notification.NotificationType;
 
-public class EmailNotificationTemplate extends com.design.patterns.factory.abstractfactory.notification.template.NotificationTemplate {
+public class EmailNotificationTemplate extends NotificationTemplate {
     public EmailNotificationTemplate(String message) {
         super(message);
     }
