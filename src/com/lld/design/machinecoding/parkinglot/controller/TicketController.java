@@ -16,7 +16,7 @@ public class TicketController {
     }
 
 
-    public GenerateTicketResponseDto generateTicket(GenerateTicketRequestDto request) {
+    public GenerateTicketResponseDto generateTicket(GenerateTicketRequestDto request) throws Exception {
         VehicleType vehicleType = request.getVehicleType();
         String vehicleNumber = request.getVehicleNumber();
         Long gateID = request.getGateId();
