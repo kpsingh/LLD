@@ -1,4 +1,4 @@
-package com.design.patterns.factory.practicalfactory.document;
+package com.lld.design.patterns.factory.practicalfactory.document;
 
 
 public class TextDocumentProcessor extends DocumentProcessor {

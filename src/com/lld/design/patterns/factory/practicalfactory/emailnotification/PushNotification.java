@@ -1,4 +1,4 @@
-package com.design.patterns.factory.practicalfactory.emailnotification;
+package com.lld.design.patterns.factory.practicalfactory.emailnotification;
 
 public class PushNotification extends Notification {
     public PushNotification(String recipient, String message) {

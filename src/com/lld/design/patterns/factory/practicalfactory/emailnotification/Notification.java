@@ -1,4 +1,4 @@
-package com.design.patterns.factory.practicalfactory.emailnotification;
+package com.lld.design.patterns.factory.practicalfactory.emailnotification;
 
 public abstract class Notification {
     public String recipient;
