@@ -20,8 +20,8 @@ public class TicketService {
     private SpotAssignmentStrategy spotAssignmentStrategy;
     private ParkingLotRepository parkingLotRepository;
 
-    TicketService(IGateRepository gateRepository, VehicleRepository vehicleRepository, SpotAssignmentStrategy spotAssignmentStrategy,
-                  TicketRepository ticketRepository, ParkingLotRepository parkingLotRepository) {
+    public TicketService(IGateRepository gateRepository, VehicleRepository vehicleRepository, SpotAssignmentStrategy spotAssignmentStrategy,
+                         TicketRepository ticketRepository, ParkingLotRepository parkingLotRepository) {
         this.gateRepository = gateRepository;
         this.vehicleRepository = vehicleRepository;
         this.spotAssignmentStrategy = spotAssignmentStrategy;
