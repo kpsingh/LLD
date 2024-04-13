@@ -4,9 +4,10 @@ import com.lld.design.machinecoding.parkinglot.models.Gate;
 
 import java.util.Optional;
 
-public class GateRepository {
+public class GateRepository implements  IGateRepository{
 
-    public Optional<Gate> findGateById(Long gateId){
-        return  Optional.empty();
+    @Override
+    public Optional<Gate> findGateById(Long gateId) {
+        return Optional.empty();
     }
 }
