@@ -1,7 +1,5 @@
 package com.lld.design.patterns.adapter.languagetranslator.external;
 
-import com.lld.design.patterns.adapter.languagetranslator.adapter.GoogleTranslationRequest;
-
 import java.util.List;
 
 import static com.lld.design.patterns.adapter.languagetranslator.external.ApiUtils.logGoogleGetSupportedLanguages;

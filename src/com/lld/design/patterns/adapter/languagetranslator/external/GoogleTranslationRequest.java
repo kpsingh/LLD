@@ -1,13 +1,15 @@
-package com.lld.design.patterns.adapter.languagetranslator.adapter;
+package com.lld.design.patterns.adapter.languagetranslator.external;
 
-import com.lld.design.patterns.adapter.languagetranslator.adapter.TranslationRequest;
-
-public class GoogleTranslationRequest extends TranslationRequest {
-
+public class GoogleTranslationRequest {
+    private String text;
+    private String sourceLanguage;
+    private String targetLanguage;
     private Double confidenceThreshold;
 
     public GoogleTranslationRequest(String text, String sourceLanguage, String targetLanguage, Double confidenceThreshold) {
-        super(text, sourceLanguage, targetLanguage);
+        this.text = text;
+        this.sourceLanguage = sourceLanguage;
+        this.targetLanguage = targetLanguage;
         this.confidenceThreshold = confidenceThreshold;
     }
 
