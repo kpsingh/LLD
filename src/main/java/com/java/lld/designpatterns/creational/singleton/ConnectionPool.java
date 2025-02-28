@@ -1,4 +1,4 @@
-package com.spring.lld.designpatterns.creational.singleton;
+package com.java.lld.designpatterns.creational.singleton;
 
 public class ConnectionPool {
     // step 1 : initialize static member
