@@ -16,7 +16,7 @@ public class Database {
         // private constructor so that can't be instantiated from outside of this class
     }
 
-    // Trick 1 : have static build method
+    // Trick 1 : have static build method : Fluent Interfaces
 
     public static Builder builder() {
         return new Builder();
@@ -75,6 +75,17 @@ public class Database {
         public Builder compressed() {
             this.compressed = true;
             return this;
+        }
+
+        // step 4 : expose back out database object, copy back the object details.
+        public Database build() {
+            Database database = new Database();
+            database.host = this.host;
+            database.userName = userName;
+            database.password = password;
+            database.port = this.port;
+            database.type = this.type;
+            return database;
         }
     }
 }
