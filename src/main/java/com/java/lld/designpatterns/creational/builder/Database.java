@@ -3,6 +3,10 @@ package com.java.lld.designpatterns.creational.builder;
 /*
     https://github.com/kanmaytacker/design-patterns/blob/master/notes/01-singleton-builder.md
  */
+
+import lombok.Getter;
+
+@Getter
 public class Database {
     private String host;
     private Integer port;
@@ -79,13 +83,31 @@ public class Database {
 
         // step 4 : expose back out database object, copy back the object details.
         public Database build() {
+
+            // Step 5 : If any global validation needs to be done, do it here before database object creation
+
+            boolean isValid = validate();
+
+            if (!isValid) {
+                throw new IllegalArgumentException("Invalid port for database " + type);
+            }
+
             Database database = new Database();
             database.host = this.host;
             database.userName = userName;
             database.password = password;
             database.port = this.port;
             database.type = this.type;
+            this.name = name;
             return database;
+        }
+
+        private boolean validate() {
+            // if database type is oracle then port should be 1521 , etc, basically any kind of validation we need.
+            if (type == DatabaseType.ORACLE && port != 1521) {
+                return false;
+            }
+            return true;
         }
     }
 }
