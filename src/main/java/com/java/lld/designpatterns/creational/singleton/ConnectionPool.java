@@ -1,8 +1,14 @@
 package com.java.lld.designpatterns.creational.singleton;
 
+/*
+    We need singleton when we want to create a shared resource. In order to make this shared resource unifirm across, we make only one
+    instance so that there should not be any consistency issue.
+ */
+
+
 public class ConnectionPool {
     // step 1 : initialize static member
-    private static ConnectionPool INSTANCE = null; // Eager initialization - slow startup
+    private static volatile ConnectionPool INSTANCE = null; // Eager initialization - slow startup
 
     // step 2 : Male the private constructor
     private ConnectionPool() {
