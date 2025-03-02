@@ -103,7 +103,7 @@ public class Database {
         }
 
         private boolean validate() {
-            // if database type is oracle then port should be 1521 , etc, basically any kind of validation we need.
+            // if database type is oracle then port should be 1521 , etc., basically any kind of validation we need.
             if (type == DatabaseType.ORACLE && port != 1521) {
                 return false;
             }
