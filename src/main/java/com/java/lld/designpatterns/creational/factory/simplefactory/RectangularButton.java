@@ -1,4 +1,4 @@
-package com.java.lld.designpatterns.creational.factory;
+package com.java.lld.designpatterns.creational.factory.simplefactory;
 
 public class RectangularButton {
     private Double length;

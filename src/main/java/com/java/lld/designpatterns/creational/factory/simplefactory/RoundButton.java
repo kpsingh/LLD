@@ -1,10 +1,8 @@
-package com.java.lld.designpatterns.creational.factory;
+package com.java.lld.designpatterns.creational.factory.simplefactory;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
-@NoArgsConstructor
 public class RoundButton {
     private Double radius;
     private Double border;
@@ -16,5 +14,7 @@ public class RoundButton {
     void render(){
         System.out.println("Round Rendered!");
     }
+
+
 
 }

@@ -1,5 +1,8 @@
-package com.java.lld.designpatterns.creational.factory;
+package com.java.lld.designpatterns.creational.factory.simplefactory;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class SquareButton {
 
     private Double length;
