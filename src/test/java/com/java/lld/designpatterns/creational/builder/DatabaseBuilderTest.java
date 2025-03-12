@@ -1,10 +1,7 @@
-package com.java.lld;
+package com.java.lld.designpatterns.creational.builder;
 
 
-import com.java.lld.designpatterns.creational.builder.Database;
 import org.junit.jupiter.api.Test;
-
-import javax.xml.crypto.Data;
 
 public class DatabaseBuilderTest {
 

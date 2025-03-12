@@ -1,8 +1,5 @@
 package com.java.lld.designpatterns.creational.builder;
 
-
-import lombok.Getter;
-
 public class MessageBuilder {
     private MessageType messageType;
     private String content;

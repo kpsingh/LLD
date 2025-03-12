@@ -1,7 +1,5 @@
-package com.java.lld;
+package com.java.lld.designpatterns.creational.builder;
 
-import com.java.lld.designpatterns.creational.builder.DatabaseType;
-import com.java.lld.designpatterns.creational.builder.Database_v2;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
