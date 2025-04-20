@@ -1,5 +1,10 @@
 package com.java.lld.designpatterns.creational.factory.factorymethod;
 
+/*
+Sample code how someone will be using this clietn using the implementation which we have implemented in the factory method.
+ */
+
+
 public class ButtonClientToTest {
     private final ButtonFactory buttonFactory;// inhitialize by dependency injections
     public ButtonClientToTest(ButtonFactory buttonFactory) {
@@ -26,6 +31,20 @@ public class ButtonClientToTest {
         Button  roundButton = roundClient.createButton(buttonContext);
         roundButton.onClick();
         roundButton.render();
+
+
+
+        // Create a square button for desktop
+        ButtonContext squareContext = ButtonContext.builder()
+                .border(1.5)
+                .length(20.0)
+                .screenSize(ScreenSize.DESKTOP)
+                .build();
+
+        ButtonClientToTest squareClient = new ButtonClientToTest(new SquareButtonFactory());
+        Button squareButton = squareClient.createButton(squareContext);
+        squareButton.render();
+        squareButton.onClick();
 
     }
 }
