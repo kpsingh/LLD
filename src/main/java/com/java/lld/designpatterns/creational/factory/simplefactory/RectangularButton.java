@@ -5,7 +5,6 @@ public class RectangularButton {
     private Double width;
 
     void onClick() {
-
         System.out.println("Rectangular Button was clicked!");
     }
 

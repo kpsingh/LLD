@@ -1,20 +1,28 @@
 package com.java.lld.designpatterns.creational.factory.simplefactory;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-@AllArgsConstructor
-public class RoundButton {
+// Step 2 : create the implementation classes
+
+@Getter
+public class RoundButton extends Button {
     private Double radius;
-    private Double border;
 
-    void onClick(){
+    public RoundButton(Double radius, Double border) {
+        super(border);
+        this.radius = radius;
+    }
+
+    @Override
+    public void onClick() {
         System.out.println("Round Button was clicked!");
     }
 
-    void render(){
+    @Override
+    public void render() {
         System.out.println("Round Rendered!");
     }
-
 
 
 }
