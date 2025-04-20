@@ -1,4 +1,4 @@
-package com.java.lld.designpatterns.creational.factory.simplefactory;
+package com.java.lld.designpatterns.creational.factory.factorymethod;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,0 +1,10 @@
+1. You have to create the product Hierarchy :
+    a. Product Interface like Button interface
+    b.  Product implementation classes like RoundButton, SquareButton, etc
+
+2. Create your Factory Interface : This interface will have one method like createButton();
+    It depend  on your high level module that is Interface
+3. Create concrete Factory corresponding to each product like RoundButtonFactory, SquareButtonFactory
+
+
+One Problem with factory method is class EXPLOSION, as we have to create one factory for one type of Button / one implementation type

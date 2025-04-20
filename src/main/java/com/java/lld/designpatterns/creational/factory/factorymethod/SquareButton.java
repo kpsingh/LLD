@@ -1,7 +1,5 @@
-package com.java.lld.designpatterns.creational.factory.simplefactory;
+package com.java.lld.designpatterns.creational.factory.factorymethod;
 
-import com.java.lld.designpatterns.creational.builder.Database;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 // Step 2 : create the implementation classes
@@ -9,6 +7,7 @@ import lombok.Getter;
 public class SquareButton extends Button {
 
     private Double length;
+
     public SquareButton(Double border, Double length) {
         super(border);
         this.length = length;
@@ -16,12 +15,12 @@ public class SquareButton extends Button {
 
     @Override
     public void onClick() {
-        System.out.println("onClick of SquareButton");
+        System.out.println("Square Button was clicked!");
     }
 
     @Override
     public void render() {
-        System.out.println("render of SquareButton");
+        System.out.println("Square Button Rendered with length: " + length + " and border: " + border);
     }
 }
 
