@@ -2,6 +2,8 @@ package com.java.lld.designpatterns.creational.factory.simplefactory;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class ButtonTest {
 
     @Test
@@ -15,5 +17,33 @@ public class ButtonTest {
 
     }
 
+
+    @Test
+    void testRoundButton() {
+        // loosely coupled with factory method
+        Button button = ButtonFactory.createButton(ScreenSize.PHONE, 10.0, 10.0, null);
+
+        assertTrue(button instanceof RoundButton,
+                "If screen size is of phone, button should be round");
+
+    }
+
+    @Test
+    void testSquareButton() {
+        Button button = ButtonFactory.
+                createButton(ScreenSize.DESKTOP, 5.0, null, 5.0);
+
+        assertTrue(button instanceof SquareButton,
+                "If the screen size is of desktop, button will be Square");
+    }
+
+    // Why the factory pattern:
+    // 1. SRP and OCP : It follows (in the client code)
+    // 2. Complex construction logic
+    // 3. Reduce uses of subclasses
+
+    // What is the down-size of simple factory pattern
+    // 1. Parameters explosion : Use the builder pattern to reduce the
+    // 2.SRP + OCP : violation in library code
 
 }
